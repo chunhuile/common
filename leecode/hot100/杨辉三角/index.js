@@ -16,8 +16,7 @@ var generate = function(numRows) {
 
     for (let i = 0; i<numRows; i++ ) {
 
-        const row = new Array(i+
-        1).fill(0);
+        const row = new Array(i+1).fill(0);
         // 指定首尾为1
         row[0] = 1;
         row[i] = 1;
