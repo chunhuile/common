@@ -16,11 +16,11 @@
  */ 
 
 function debounce(flag,handler,ms){
-
     let timer = null
 
     return function(...args){
         clearTimeout (timer)
+        
         if(flag && !timer){
             handler.apply(this.args)
         }
@@ -29,7 +29,6 @@ function debounce(flag,handler,ms){
             handler.apply(this.args)
         },1000)
     }
-
 }
 
 // demo
